@@ -11,7 +11,7 @@ function App() {
   
   async function getDataApi() {
     try {
-      const res = await axios.get('https://api.github.com/users/jonathasdias');
+      const res = await axios.get('https://api.github.com/users/jonathasdias' && item !== 'sobre-mim');
       setData(res.data);
     } catch (error) {
       console.error(error);
