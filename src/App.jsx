@@ -11,7 +11,7 @@ function App() {
   
   async function getDataApi() {
     try {
-      const res = await axios.get('https://api.github.com/users/jonathasdias' && item !== 'sobre-mim');
+      const res = await axios.get('https://api.github.com/users/jonathasdias');
       setData(res.data);
     } catch (error) {
       console.error(error);
@@ -23,7 +23,7 @@ function App() {
       setIsLoading(true);
       const res = await axios.get('https://api.github.com/users/jonathasdias/repos');
       setIsLoading(false);
-      const reposFilter = res.data.filter(repos => repos.name !== "jonathasdias");
+      const reposFilter = res.data.filter(repos => repos.name !== "jonathasdias" && repos.name !== 'sobre-mim');
       setReposList(reposFilter);
     } catch (error) {
       console.error(error);
