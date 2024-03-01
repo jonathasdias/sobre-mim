@@ -7,7 +7,7 @@ export default function CardAboutMe({data}) {
             </a>
           </figure>
 
-          <div className="text-justify md:ml-2 text-lg">
+          <div className="text-justify md:ml-2 text-base sm:text-lg opacity-90 bg-slate-500 md:bg-transparent">
             <p className="p-1 indent-8">Olá, eu sou <b>{data.name}</b>, moro em {data.location}, atualmente faço faculdade de Análise e desenvolvimento de sistemas e sou apaixonado pela programação front-end web. Como um eterno estudante, estou sempre aprimorando meus conhecimentos no desenvolvimento de sites e aplicações web interativas, responsivas, atraentes, com um bom seo, boa acessibilidade, dinâmicas e eficientes. Estou sempre disposto a aprender e aprimorar minhas habilidades.</p>
             <p className="p-1">
               <b>Minhas tecnologias como desenvolvedor front-end web:</b> HTML, CSS, JAVASCRIPT, TAILWINDCSS e REACT.
