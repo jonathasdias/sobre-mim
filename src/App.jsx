@@ -21,10 +21,9 @@ function App() {
   async function getDataRepos() {
     try {
       setIsLoading(true);
-      const res = await axios.get('https://api.github.com/users/jonathasdias/repos');
+      const res = await axios.get('https://api.github.com/users/jonathasdias/starred');
       setIsLoading(false);
-      const reposFilter = res.data.filter(repos => repos.name !== "jonathasdias" && repos.name !== 'sobre-mim');
-      setReposList(reposFilter);
+      setReposList(res.data);
     } catch (error) {
       console.error(error);
     }

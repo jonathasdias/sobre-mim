@@ -8,9 +8,8 @@ import Paralax from '../imgs/reposImgs/paralax.png';
 import Previsaotempo from '../imgs/reposImgs/previsaotempo.png';
 import Noticias from '../imgs/reposImgs/noticias.png';
 import Ecommerce from '../imgs/reposImgs/ecommerce.png';
-import Todolist from '../imgs/reposImgs/todolist.png';
 
-const imgs = [Cep, Gallery, Playmusic, Loginsignup, Paralax, Previsaotempo, Noticias, Ecommerce, Todolist];
+const imgs = [Cep, Gallery, Playmusic, Loginsignup, Paralax, Previsaotempo, Noticias, Ecommerce];
 
 export default function CardRepos({reposList}) {
     return(
